@@ -1,0 +1,67 @@
+# Data Quality Validation Rules
+
+datasets:
+  meter_readings:
+    fields:
+      - name: meter_id
+        type: string
+        required: true
+      - name: reading_value
+        type: float
+        required: true
+        validators:
+          - type: min_value
+            value: 0
+            message: "Impossible meter reading: Consumption cannot be negative"
+      - name: reading_timestamp
+        type: timestamp
+        required: true
+        validators:
+          - type: no_future_dates
+            message: "Invalid timestamp: Reading cannot be in the future"
+    business_rules:
+      - rule: "consumption_threshold"
+        description: "Flag unusually high readings that might indicate a leak or hardware fault"
+        condition: "reading_value > 10000"
+        severity: "WARNING"
+
+  payments:
+    fields:
+      - name: account_id
+        type: string
+        required: true
+      - name: amount
+        type: float
+        required: true
+        validators:
+          - type: min_value
+            value: 0.01
+            message: "Negative quantities not allowed for standard payments"
+      - name: payment_method
+        type: string
+        required: true
+        validators:
+          - type: allowed_values
+            values: ["CREDIT_CARD", "BANK_TRANSFER", "CASH", "CHECK"]
+            message: "Invalid payment method"
+
+  bills:
+    fields:
+      - name: bill_id
+        type: string
+        required: true
+      - name: account_id
+        type: string
+        required: true
+      - name: total_amount
+        type: float
+        required: true
+        validators:
+          - type: min_value
+            value: 0
+            message: "Bill amount cannot be negative"
+    cross_references:
+      - field: account_id
+        target_table: "dim_account"
+        target_field: "account_id"
+        message: "Invalid foreign-key relationship: Account does not exist in warehouse"

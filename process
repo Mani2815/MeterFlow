@@ -1,0 +1,7 @@
+#!/bin/bash
+# Wrapper CLI for processing service
+if [ "$1" == "status" ]; then
+    docker-compose exec -T backend python -m app.processing.standardize status
+else
+    docker-compose exec -T backend python -m app.processing.standardize "$@"
+fi

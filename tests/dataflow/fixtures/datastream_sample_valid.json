@@ -1,0 +1,12 @@
+{
+  "customer_id": "c200c821-1234",
+  "status": "ACTIVE",
+  "first_name": "John",
+  "last_name": "Doe",
+  "_metadata": {
+    "change_type": "INSERT", 
+    "table": "customers",
+    "schema": "utility",
+    "timestamp": "2026-10-06T12:00:00Z"
+  }
+}

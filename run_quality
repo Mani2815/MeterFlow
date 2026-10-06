@@ -1,0 +1,3 @@
+#!/bin/bash
+# Wrapper CLI for data quality engine
+docker-compose exec -T backend python -m app.processing.quality "$@"

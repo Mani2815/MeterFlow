@@ -1,0 +1,44 @@
+# GCP Datastream Configuration Template
+# DO NOT COMMIT SECRETS TO VERSION CONTROL.
+# Replace the bracketed placeholders with your actual GCP/environment values before applying.
+
+source_connection_profile:
+  display_name: "PostgreSQL Source Profile"
+  profile_id: "postgres-source-local"
+  location: "us-central1"
+  postgresql_profile:
+    hostname: "[YOUR_DATABASE_HOST_OR_IP]"
+    port: 5432
+    username: "[YOUR_REPLICATION_USER]"
+    password: "[YOUR_REPLICATION_PASSWORD]" # Consider using Secret Manager
+    database: "meter_to_cash"
+
+destination_connection_profile:
+  display_name: "GCS Destination Profile"
+  profile_id: "gcs-destination-cdc"
+  location: "us-central1"
+  gcs_profile:
+    bucket: "[YOUR_GCS_BUCKET_NAME]"
+    root_path: "/datastream"
+
+stream:
+  display_name: "Meter to Cash CDC Stream"
+  stream_id: "meter-to-cash-cdc"
+  location: "us-central1"
+  source_config:
+    source_connection_profile: "projects/[PROJECT_ID]/locations/us-central1/connectionProfiles/postgres-source-local"
+    postgresql_source_config:
+      publication: "meter_to_cash_pub"
+      replication_slot: "datastream_cdc_slot"
+      include_objects:
+        postgresql_schemas:
+          - schema: "utility"
+  destination_config:
+    destination_connection_profile: "projects/[PROJECT_ID]/locations/us-central1/connectionProfiles/gcs-destination-cdc"
+    gcs_destination_config:
+      path: "/stream_output"
+      file_format: "JSON"
+      json_file_format:
+        schema_file_format: "NO_SCHEMA_FILE"
+        compression: "GZIP"
+  backfill_all: {}
