@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-10-07T03:19:45.583933+00:00",
+  "source": "Gold Parquet zone",
+  "total_rows": 999,
+  "valid_rows": 999,
+  "null_tariff": 0,
+  "null_kwh": 0,
+  "duplicates": 0,
+  "quality_score": 100.0,
+  "dimensions": {
+    "completeness": 100.0,
+    "validity": 100.0,
+    "uniqueness": 100.0
+  }
+}

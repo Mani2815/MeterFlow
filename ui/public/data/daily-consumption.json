@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-10-07T03:19:45.583933+00:00",
+  "daily": [
+    {
+      "date": "2012-10-12",
+      "total_kwh": 7.098,
+      "reading_count": 46
+    },
+    {
+      "date": "2012-10-13",
+      "total_kwh": 11.087,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-14",
+      "total_kwh": 13.223,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-15",
+      "total_kwh": 10.257,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-16",
+      "total_kwh": 9.769,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-17",
+      "total_kwh": 10.885,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-18",
+      "total_kwh": 10.751,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-19",
+      "total_kwh": 8.431,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-20",
+      "total_kwh": 17.378,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-21",
+      "total_kwh": 24.49,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-22",
+      "total_kwh": 18.885,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-23",
+      "total_kwh": 10.485,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-24",
+      "total_kwh": 15.537,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-25",
+      "total_kwh": 13.128,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-26",
+      "total_kwh": 15.065,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-27",
+      "total_kwh": 16.886,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-28",
+      "total_kwh": 19.629,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-29",
+      "total_kwh": 12.779,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-30",
+      "total_kwh": 13.961,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-10-31",
+      "total_kwh": 17.822,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-11-01",
+      "total_kwh": 10.183,
+      "reading_count": 41
+    }
+  ]
+}

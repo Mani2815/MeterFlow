@@ -1,0 +1,10 @@
+[
+  {
+    "status": "ACTIVE",
+    "service_point_id": "SP-000002",
+    "account_id": "ACC-000002",
+    "id": "CTR-000002",
+    "contract_start": "2010-01-20T00:00:00",
+    "contract_end": null
+  }
+]

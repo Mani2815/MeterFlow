@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-10-07T03:19:45.583933+00:00",
+  "table": "gold/smartmeter/gold_*.parquet",
+  "description": "UKPN SmartMeter Gold zone \u2014 one row per validated meter reading event",
+  "columns": [
+    {
+      "name": "meter_id",
+      "type": "STRING",
+      "nullable": false,
+      "origin": "Derived",
+      "description": "Synthetic meter ID (METER- prefix + LCLid suffix)"
+    },
+    {
+      "name": "household_id",
+      "type": "STRING",
+      "nullable": false,
+      "origin": "UKPN (Real)",
+      "description": "LCLid \u2014 real source household identifier from UKPN dataset"
+    },
+    {
+      "name": "event_timestamp",
+      "type": "TIMESTAMP",
+      "nullable": false,
+      "origin": "UKPN (Real)",
+      "description": "DateTime of the half-hour reading interval (UTC)"
+    },
+    {
+      "name": "consumption_kwh",
+      "type": "FLOAT64",
+      "nullable": true,
+      "origin": "UKPN (Real)",
+      "description": "Electricity consumption in kWh for the half-hour interval"
+    },
+    {
+      "name": "stdor_to_u",
+      "type": "STRING",
+      "nullable": true,
+      "origin": "UKPN (Real)",
+      "description": "Tariff classification: Std (Standard) or ToU (Time of Use). Preserved exactly from source stdorToU field."
+    },
+    {
+      "name": "source_system",
+      "type": "STRING",
+      "nullable": false,
+      "origin": "System",
+      "description": "Always: uk_power_networks"
+    },
+    {
+      "name": "processed_at",
+      "type": "TIMESTAMP",
+      "nullable": false,
+      "origin": "System",
+      "description": "Timestamp when standardization was applied"
+    },
+    {
+      "name": "ingestion_run_id",
+      "type": "STRING",
+      "nullable": false,
+      "origin": "System",
+      "description": "Reference to the IngestionRun that produced this record"
+    },
+    {
+      "name": "standardize_run_id",
+      "type": "STRING",
+      "nullable": false,
+      "origin": "System",
+      "description": "Reference to the StandardizeRun that produced this record"
+    }
+  ]
+}

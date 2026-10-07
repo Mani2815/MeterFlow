@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-07T03:19:45.583933+00:00",
+  "source": "UK Power Networks \u2014 SmartMeter Energy Consumption Data in London Households",
+  "source_url": "https://data.london.gov.uk/dataset/smartmeter-energy-consumption-data-in-london-households-vqm0d",
+  "gold_file": "gold_da21a99e-fc08-4485-8d6b-62f0441d4d78.parquet",
+  "storage_zone": "Gold (Parquet)",
+  "total_rows": 999,
+  "distinct_households": 1,
+  "total_consumption_kwh": 287.729,
+  "tariff_std_count": 999,
+  "tariff_tou_count": 0,
+  "date_range": {
+    "from": "2012-10-12 00:30:00+00:00",
+    "to": "2012-11-01 20:00:00+00:00"
+  },
+  "columns": [
+    "meter_id",
+    "household_id",
+    "event_timestamp",
+    "consumption_kwh",
+    "stdor_to_u",
+    "source_system",
+    "processed_at",
+    "ingestion_run_id",
+    "standardize_run_id"
+  ]
+}

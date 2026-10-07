@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-10-07T03:19:45.583933+00:00",
+  "note": "Snapshot generated from validated Gold dataset. Not a live backend query.",
+  "stages": [
+    {
+      "name": "UKPN Source",
+      "status": "ACTIVE",
+      "description": "SmartMeter Energy Consumption Data in London Households (168 CSV files)",
+      "format": "CSV (ZIP archive)",
+      "rows": null
+    },
+    {
+      "name": "Raw",
+      "status": "PASS",
+      "description": "Ingested to Raw zone as NDJSON",
+      "format": "NDJSON",
+      "fields": [
+        "meter_id",
+        "household_id",
+        "event_timestamp",
+        "consumption_kwh",
+        "stdorToU",
+        "source_system"
+      ],
+      "rows": 999
+    },
+    {
+      "name": "Standardized",
+      "status": "PASS",
+      "description": "Renamed fields, added provenance metadata, wrote Parquet",
+      "format": "Parquet (Snappy)",
+      "fields": [
+        "meter_id",
+        "household_id",
+        "event_timestamp",
+        "consumption_kwh",
+        "stdor_to_u",
+        "processed_at",
+        "ingestion_run_id"
+      ],
+      "rows": 999
+    },
+    {
+      "name": "Gold",
+      "status": "PASS",
+      "description": "Validated, deduplicated, DQ-checked records",
+      "format": "Parquet (Snappy)",
+      "fields": [
+        "meter_id",
+        "household_id",
+        "event_timestamp",
+        "consumption_kwh",
+        "stdor_to_u",
+        "standardize_run_id"
+      ],
+      "rows": 999
+    },
+    {
+      "name": "BigQuery",
+      "status": "BLOCKED",
+      "description": "GCP Application Default Credentials not configured. Schema is defined and ready.",
+      "rows": null
+    }
+  ]
+}
