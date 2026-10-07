@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T03:19:45.583933+00:00",
+  "generated_at": "2026-10-07T04:29:04.231149+00:00",
   "table": "gold/smartmeter/gold_*.parquet",
   "description": "UKPN SmartMeter Gold zone \u2014 one row per validated meter reading event",
   "columns": [

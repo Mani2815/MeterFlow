@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Data Platform | Meter-to-Cash",
+  title: "MeterFlow | Utility Data Platform",
   description: "Utility Meter-to-Cash Cloud Data Platform",
 };
 

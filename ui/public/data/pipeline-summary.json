@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T03:19:45.583933+00:00",
+  "generated_at": "2026-10-07T04:29:04.231149+00:00",
   "note": "Snapshot generated from validated Gold dataset. Not a live backend query.",
   "stages": [
     {
@@ -22,7 +22,7 @@
         "stdorToU",
         "source_system"
       ],
-      "rows": 999
+      "rows": 99931
     },
     {
       "name": "Standardized",
@@ -38,7 +38,7 @@
         "processed_at",
         "ingestion_run_id"
       ],
-      "rows": 999
+      "rows": 99931
     },
     {
       "name": "Gold",
@@ -53,7 +53,7 @@
         "stdor_to_u",
         "standardize_run_id"
       ],
-      "rows": 999
+      "rows": 99931
     },
     {
       "name": "BigQuery",

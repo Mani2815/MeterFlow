@@ -1,110 +1,3810 @@
 {
-  "generated_at": "2026-10-07T03:19:45.583933+00:00",
+  "generated_at": "2026-10-07T04:29:04.231149+00:00",
   "daily": [
     {
+      "date": "2012-01-30",
+      "total_kwh": 2.162,
+      "reading_count": 25
+    },
+    {
+      "date": "2012-01-31",
+      "total_kwh": 3.906,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-01",
+      "total_kwh": 3.587,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-02",
+      "total_kwh": 3.416,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-03",
+      "total_kwh": 3.739,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-04",
+      "total_kwh": 3.631,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-05",
+      "total_kwh": 3.578,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-06",
+      "total_kwh": 3.103,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-07",
+      "total_kwh": 3.096,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-08",
+      "total_kwh": 3.132,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-09",
+      "total_kwh": 3.852,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-10",
+      "total_kwh": 3.099,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-11",
+      "total_kwh": 4.098,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-12",
+      "total_kwh": 3.023,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-13",
+      "total_kwh": 3.08,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-14",
+      "total_kwh": 2.881,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-15",
+      "total_kwh": 2.654,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-16",
+      "total_kwh": 2.701,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-17",
+      "total_kwh": 2.464,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-18",
+      "total_kwh": 2.937,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-19",
+      "total_kwh": 2.632,
+      "reading_count": 48
+    },
+    {
+      "date": "2012-02-20",
+      "total_kwh": 10.975,
+      "reading_count": 70
+    },
+    {
+      "date": "2012-02-21",
+      "total_kwh": 35.475,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-02-22",
+      "total_kwh": 22.571,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-02-23",
+      "total_kwh": 26.271,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-02-24",
+      "total_kwh": 18.886,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-02-25",
+      "total_kwh": 18.576,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-02-26",
+      "total_kwh": 21.542,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-02-27",
+      "total_kwh": 22.051,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-02-28",
+      "total_kwh": 18.089,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-02-29",
+      "total_kwh": 16.665,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-01",
+      "total_kwh": 13.442,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-02",
+      "total_kwh": 14.196,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-03",
+      "total_kwh": 14.416,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-04",
+      "total_kwh": 18.606,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-05",
+      "total_kwh": 15.484,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-06",
+      "total_kwh": 50.923,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-07",
+      "total_kwh": 45.61,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-08",
+      "total_kwh": 28.008,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-09",
+      "total_kwh": 23.733,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-10",
+      "total_kwh": 25.824,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-11",
+      "total_kwh": 21.813,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-12",
+      "total_kwh": 25.482,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-13",
+      "total_kwh": 25.485,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-14",
+      "total_kwh": 26.25,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-15",
+      "total_kwh": 25.313,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-16",
+      "total_kwh": 25.407,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-17",
+      "total_kwh": 25.707,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-18",
+      "total_kwh": 24.905,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-19",
+      "total_kwh": 24.756,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-20",
+      "total_kwh": 24.368,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-21",
+      "total_kwh": 23.121,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-22",
+      "total_kwh": 23.63,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-23",
+      "total_kwh": 25.376,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-24",
+      "total_kwh": 19.122,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-25",
+      "total_kwh": 7.794,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-26",
+      "total_kwh": 6.917,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-27",
+      "total_kwh": 6.595,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-28",
+      "total_kwh": 6.636,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-29",
+      "total_kwh": 6.938,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-30",
+      "total_kwh": 6.98,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-03-31",
+      "total_kwh": 6.74,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-01",
+      "total_kwh": 6.646,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-02",
+      "total_kwh": 9.28,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-03",
+      "total_kwh": 23.862,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-04",
+      "total_kwh": 17.254,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-05",
+      "total_kwh": 17.645,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-06",
+      "total_kwh": 19.825,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-07",
+      "total_kwh": 19.712,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-08",
+      "total_kwh": 18.159,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-09",
+      "total_kwh": 21.626,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-10",
+      "total_kwh": 15.494,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-11",
+      "total_kwh": 17.413,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-12",
+      "total_kwh": 21.566,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-13",
+      "total_kwh": 17.986,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-14",
+      "total_kwh": 17.99,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-15",
+      "total_kwh": 17.392,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-16",
+      "total_kwh": 20.772,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-17",
+      "total_kwh": 17.927,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-18",
+      "total_kwh": 19.732,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-19",
+      "total_kwh": 17.796,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-20",
+      "total_kwh": 19.03,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-21",
+      "total_kwh": 15.419,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-22",
+      "total_kwh": 16.824,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-23",
+      "total_kwh": 18.543,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-24",
+      "total_kwh": 18.976,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-25",
+      "total_kwh": 17.408,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-26",
+      "total_kwh": 16.435,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-27",
+      "total_kwh": 17.596,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-28",
+      "total_kwh": 17.089,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-29",
+      "total_kwh": 19.412,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-04-30",
+      "total_kwh": 14.244,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-05-01",
+      "total_kwh": 14.303,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-05-02",
+      "total_kwh": 14.269,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-05-03",
+      "total_kwh": 17.087,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-05-04",
+      "total_kwh": 18.3,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-05-05",
+      "total_kwh": 13.717,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-05-06",
+      "total_kwh": 13.502,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-05-07",
+      "total_kwh": 20.284,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-05-08",
+      "total_kwh": 16.814,
+      "reading_count": 118
+    },
+    {
+      "date": "2012-05-09",
+      "total_kwh": 17.428,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-10",
+      "total_kwh": 15.748,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-11",
+      "total_kwh": 17.795,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-12",
+      "total_kwh": 19.37,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-13",
+      "total_kwh": 16.151,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-14",
+      "total_kwh": 18.201,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-15",
+      "total_kwh": 18.753,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-16",
+      "total_kwh": 20.45,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-17",
+      "total_kwh": 16.41,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-18",
+      "total_kwh": 17.569,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-19",
+      "total_kwh": 17.805,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-20",
+      "total_kwh": 17.489,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-21",
+      "total_kwh": 16.306,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-22",
+      "total_kwh": 17.642,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-23",
+      "total_kwh": 17.033,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-24",
+      "total_kwh": 17.976,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-25",
+      "total_kwh": 17.198,
+      "reading_count": 142
+    },
+    {
+      "date": "2012-05-26",
+      "total_kwh": 17.031,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-27",
+      "total_kwh": 17.015,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-28",
+      "total_kwh": 19.748,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-29",
+      "total_kwh": 17.257,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-30",
+      "total_kwh": 16.731,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-05-31",
+      "total_kwh": 16.145,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-01",
+      "total_kwh": 18.397,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-02",
+      "total_kwh": 16.368,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-03",
+      "total_kwh": 18.079,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-04",
+      "total_kwh": 17.436,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-05",
+      "total_kwh": 16.101,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-06",
+      "total_kwh": 18.265,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-07",
+      "total_kwh": 15.576,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-08",
+      "total_kwh": 18.066,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-09",
+      "total_kwh": 16.904,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-10",
+      "total_kwh": 15.784,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-11",
+      "total_kwh": 17.431,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-12",
+      "total_kwh": 17.959,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-13",
+      "total_kwh": 15.017,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-14",
+      "total_kwh": 16.468,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-15",
+      "total_kwh": 16.354,
+      "reading_count": 97
+    },
+    {
+      "date": "2012-06-16",
+      "total_kwh": 18.069,
+      "reading_count": 143
+    },
+    {
+      "date": "2012-06-17",
+      "total_kwh": 18.313,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-18",
+      "total_kwh": 18.625,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-19",
+      "total_kwh": 16.152,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-20",
+      "total_kwh": 17.712,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-21",
+      "total_kwh": 16.265,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-22",
+      "total_kwh": 17.389,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-23",
+      "total_kwh": 16.967,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-24",
+      "total_kwh": 15.897,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-25",
+      "total_kwh": 18.58,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-26",
+      "total_kwh": 15.684,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-27",
+      "total_kwh": 17.581,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-28",
+      "total_kwh": 16.927,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-29",
+      "total_kwh": 16.25,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-06-30",
+      "total_kwh": 16.711,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-01",
+      "total_kwh": 15.962,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-02",
+      "total_kwh": 16.602,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-03",
+      "total_kwh": 15.703,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-04",
+      "total_kwh": 16.871,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-05",
+      "total_kwh": 17.359,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-06",
+      "total_kwh": 17.821,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-07",
+      "total_kwh": 16.45,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-08",
+      "total_kwh": 15.901,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-09",
+      "total_kwh": 15.639,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-10",
+      "total_kwh": 15.958,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-11",
+      "total_kwh": 14.424,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-12",
+      "total_kwh": 17.159,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-13",
+      "total_kwh": 18.51,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-14",
+      "total_kwh": 15.718,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-15",
+      "total_kwh": 15.774,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-16",
+      "total_kwh": 18.385,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-17",
+      "total_kwh": 17.199,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-18",
+      "total_kwh": 17.274,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-19",
+      "total_kwh": 15.012,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-20",
+      "total_kwh": 17.204,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-21",
+      "total_kwh": 15.987,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-22",
+      "total_kwh": 15.918,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-23",
+      "total_kwh": 16.441,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-24",
+      "total_kwh": 18.233,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-25",
+      "total_kwh": 18.363,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-26",
+      "total_kwh": 19.969,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-27",
+      "total_kwh": 19.721,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-28",
+      "total_kwh": 17.107,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-07-29",
+      "total_kwh": 10.982,
+      "reading_count": 122
+    },
+    {
+      "date": "2012-07-30",
+      "total_kwh": 8.977,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-07-31",
+      "total_kwh": 12.306,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-01",
+      "total_kwh": 9.176,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-02",
+      "total_kwh": 9.483,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-03",
+      "total_kwh": 14.377,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-04",
+      "total_kwh": 18.14,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-05",
+      "total_kwh": 13.026,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-06",
+      "total_kwh": 14.598,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-07",
+      "total_kwh": 13.985,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-08",
+      "total_kwh": 15.486,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-09",
+      "total_kwh": 15.901,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-10",
+      "total_kwh": 15.873,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-11",
+      "total_kwh": 14.678,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-12",
+      "total_kwh": 12.605,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-13",
+      "total_kwh": 14.325,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-14",
+      "total_kwh": 14.016,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-15",
+      "total_kwh": 14.38,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-16",
+      "total_kwh": 14.45,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-17",
+      "total_kwh": 15.197,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-18",
+      "total_kwh": 15.449,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-19",
+      "total_kwh": 13.857,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-20",
+      "total_kwh": 14.731,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-21",
+      "total_kwh": 15.095,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-22",
+      "total_kwh": 14.79,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-23",
+      "total_kwh": 14.563,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-24",
+      "total_kwh": 14.287,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-25",
+      "total_kwh": 13.893,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-26",
+      "total_kwh": 13.909,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-27",
+      "total_kwh": 14.741,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-28",
+      "total_kwh": 13.07,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-29",
+      "total_kwh": 15.796,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-30",
+      "total_kwh": 14.521,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-08-31",
+      "total_kwh": 15.012,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-01",
+      "total_kwh": 16.664,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-02",
+      "total_kwh": 14.393,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-03",
+      "total_kwh": 14.109,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-04",
+      "total_kwh": 15.237,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-05",
+      "total_kwh": 13.674,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-06",
+      "total_kwh": 14.468,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-07",
+      "total_kwh": 14.623,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-08",
+      "total_kwh": 14.686,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-09",
+      "total_kwh": 14.251,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-10",
+      "total_kwh": 14.646,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-11",
+      "total_kwh": 13.428,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-12",
+      "total_kwh": 14.484,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-13",
+      "total_kwh": 14.963,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-14",
+      "total_kwh": 15.654,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-15",
+      "total_kwh": 13.273,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-16",
+      "total_kwh": 13.158,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-17",
+      "total_kwh": 13.946,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-18",
+      "total_kwh": 14.501,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-19",
+      "total_kwh": 15.379,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-20",
+      "total_kwh": 15.635,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-21",
+      "total_kwh": 15.183,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-22",
+      "total_kwh": 14.003,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-23",
+      "total_kwh": 14.123,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-24",
+      "total_kwh": 15.157,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-25",
+      "total_kwh": 14.292,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-26",
+      "total_kwh": 13.364,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-27",
+      "total_kwh": 14.013,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-28",
+      "total_kwh": 14.154,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-29",
+      "total_kwh": 15.265,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-09-30",
+      "total_kwh": 18.034,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-01",
+      "total_kwh": 15.559,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-02",
+      "total_kwh": 13.458,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-03",
+      "total_kwh": 13.503,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-04",
+      "total_kwh": 12.843,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-05",
+      "total_kwh": 14.773,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-06",
+      "total_kwh": 15.005,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-07",
+      "total_kwh": 19.469,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-08",
+      "total_kwh": 18.048,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-09",
+      "total_kwh": 14.295,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-10",
+      "total_kwh": 13.114,
+      "reading_count": 96
+    },
+    {
+      "date": "2012-10-11",
+      "total_kwh": 14.679,
+      "reading_count": 96
+    },
+    {
       "date": "2012-10-12",
-      "total_kwh": 7.098,
-      "reading_count": 46
+      "total_kwh": 22.054,
+      "reading_count": 142
     },
     {
       "date": "2012-10-13",
-      "total_kwh": 11.087,
-      "reading_count": 48
+      "total_kwh": 27.187,
+      "reading_count": 144
     },
     {
       "date": "2012-10-14",
-      "total_kwh": 13.223,
-      "reading_count": 48
+      "total_kwh": 30.632,
+      "reading_count": 144
     },
     {
       "date": "2012-10-15",
-      "total_kwh": 10.257,
-      "reading_count": 48
+      "total_kwh": 24.839,
+      "reading_count": 144
     },
     {
       "date": "2012-10-16",
-      "total_kwh": 9.769,
-      "reading_count": 48
+      "total_kwh": 24.862,
+      "reading_count": 144
     },
     {
       "date": "2012-10-17",
-      "total_kwh": 10.885,
-      "reading_count": 48
+      "total_kwh": 56.742,
+      "reading_count": 144
     },
     {
       "date": "2012-10-18",
-      "total_kwh": 10.751,
-      "reading_count": 48
+      "total_kwh": 33.461,
+      "reading_count": 144
     },
     {
       "date": "2012-10-19",
-      "total_kwh": 8.431,
-      "reading_count": 48
+      "total_kwh": 33.541,
+      "reading_count": 144
     },
     {
       "date": "2012-10-20",
-      "total_kwh": 17.378,
-      "reading_count": 48
+      "total_kwh": 40.536,
+      "reading_count": 144
     },
     {
       "date": "2012-10-21",
-      "total_kwh": 24.49,
-      "reading_count": 48
+      "total_kwh": 46.408,
+      "reading_count": 144
     },
     {
       "date": "2012-10-22",
-      "total_kwh": 18.885,
-      "reading_count": 48
+      "total_kwh": 43.156,
+      "reading_count": 144
     },
     {
       "date": "2012-10-23",
-      "total_kwh": 10.485,
-      "reading_count": 48
+      "total_kwh": 32.851,
+      "reading_count": 144
     },
     {
       "date": "2012-10-24",
-      "total_kwh": 15.537,
-      "reading_count": 48
+      "total_kwh": 39.143,
+      "reading_count": 144
     },
     {
       "date": "2012-10-25",
-      "total_kwh": 13.128,
-      "reading_count": 48
+      "total_kwh": 34.806,
+      "reading_count": 144
     },
     {
       "date": "2012-10-26",
-      "total_kwh": 15.065,
-      "reading_count": 48
+      "total_kwh": 37.551,
+      "reading_count": 144
     },
     {
       "date": "2012-10-27",
-      "total_kwh": 16.886,
-      "reading_count": 48
+      "total_kwh": 43.318,
+      "reading_count": 144
     },
     {
       "date": "2012-10-28",
-      "total_kwh": 19.629,
-      "reading_count": 48
+      "total_kwh": 45.865,
+      "reading_count": 144
     },
     {
       "date": "2012-10-29",
-      "total_kwh": 12.779,
-      "reading_count": 48
+      "total_kwh": 34.919,
+      "reading_count": 144
     },
     {
       "date": "2012-10-30",
-      "total_kwh": 13.961,
-      "reading_count": 48
+      "total_kwh": 36.83,
+      "reading_count": 144
     },
     {
       "date": "2012-10-31",
-      "total_kwh": 17.822,
-      "reading_count": 48
+      "total_kwh": 41.466,
+      "reading_count": 144
     },
     {
       "date": "2012-11-01",
-      "total_kwh": 10.183,
-      "reading_count": 41
+      "total_kwh": 34.421,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-02",
+      "total_kwh": 38.971,
+      "reading_count": 143
+    },
+    {
+      "date": "2012-11-03",
+      "total_kwh": 37.223,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-04",
+      "total_kwh": 37.732,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-05",
+      "total_kwh": 61.634,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-06",
+      "total_kwh": 55.855,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-07",
+      "total_kwh": 56.019,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-08",
+      "total_kwh": 33.611,
+      "reading_count": 97
+    },
+    {
+      "date": "2012-11-09",
+      "total_kwh": 50.68,
+      "reading_count": 143
+    },
+    {
+      "date": "2012-11-10",
+      "total_kwh": 47.559,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-11",
+      "total_kwh": 47.187,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-12",
+      "total_kwh": 54.923,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-13",
+      "total_kwh": 52.65,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-14",
+      "total_kwh": 30.722,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-15",
+      "total_kwh": 32.671,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-16",
+      "total_kwh": 35.441,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-17",
+      "total_kwh": 54.061,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-18",
+      "total_kwh": 57.886,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-19",
+      "total_kwh": 56.485,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-20",
+      "total_kwh": 33.216,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-21",
+      "total_kwh": 32.797,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-22",
+      "total_kwh": 32.709,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-23",
+      "total_kwh": 32.135,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-24",
+      "total_kwh": 57.836,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-25",
+      "total_kwh": 53.778,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-26",
+      "total_kwh": 31.221,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-27",
+      "total_kwh": 32.637,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-28",
+      "total_kwh": 52.375,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-29",
+      "total_kwh": 55.476,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-11-30",
+      "total_kwh": 59.64,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-01",
+      "total_kwh": 56.91,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-02",
+      "total_kwh": 60.217,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-03",
+      "total_kwh": 53.665,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-04",
+      "total_kwh": 54.874,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-05",
+      "total_kwh": 55.834,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-06",
+      "total_kwh": 58.053,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-07",
+      "total_kwh": 58.235,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-08",
+      "total_kwh": 60.583,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-09",
+      "total_kwh": 54.639,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-10",
+      "total_kwh": 55.417,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-11",
+      "total_kwh": 55.634,
+      "reading_count": 143
+    },
+    {
+      "date": "2012-12-12",
+      "total_kwh": 55.929,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-13",
+      "total_kwh": 57.018,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-14",
+      "total_kwh": 55.159,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-15",
+      "total_kwh": 59.83,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-16",
+      "total_kwh": 65.202,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-17",
+      "total_kwh": 55.585,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-18",
+      "total_kwh": 49.165,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-19",
+      "total_kwh": 53.766,
+      "reading_count": 147
+    },
+    {
+      "date": "2012-12-20",
+      "total_kwh": 55.371,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-21",
+      "total_kwh": 55.375,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-22",
+      "total_kwh": 59.739,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-23",
+      "total_kwh": 48.434,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-24",
+      "total_kwh": 50.954,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-25",
+      "total_kwh": 28.263,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-26",
+      "total_kwh": 31.342,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-27",
+      "total_kwh": 56.149,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-28",
+      "total_kwh": 55.076,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-29",
+      "total_kwh": 53.75,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-30",
+      "total_kwh": 55.548,
+      "reading_count": 144
+    },
+    {
+      "date": "2012-12-31",
+      "total_kwh": 31.319,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-01",
+      "total_kwh": 31.287,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-02",
+      "total_kwh": 35.196,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-03",
+      "total_kwh": 35.318,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-04",
+      "total_kwh": 32.553,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-05",
+      "total_kwh": 34.846,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-06",
+      "total_kwh": 51.957,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-07",
+      "total_kwh": 51.231,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-08",
+      "total_kwh": 53.665,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-09",
+      "total_kwh": 36.627,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-10",
+      "total_kwh": 52.739,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-11",
+      "total_kwh": 53.407,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-12",
+      "total_kwh": 55.829,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-13",
+      "total_kwh": 54.737,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-14",
+      "total_kwh": 54.282,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-15",
+      "total_kwh": 46.576,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-16",
+      "total_kwh": 52.304,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-17",
+      "total_kwh": 48.989,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-18",
+      "total_kwh": 66.805,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-19",
+      "total_kwh": 64.127,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-20",
+      "total_kwh": 56.73,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-21",
+      "total_kwh": 56.783,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-22",
+      "total_kwh": 53.608,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-23",
+      "total_kwh": 55.24,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-24",
+      "total_kwh": 57.127,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-25",
+      "total_kwh": 53.143,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-26",
+      "total_kwh": 59.405,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-27",
+      "total_kwh": 53.712,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-28",
+      "total_kwh": 31.528,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-29",
+      "total_kwh": 30.96,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-30",
+      "total_kwh": 29.899,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-01-31",
+      "total_kwh": 32.187,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-01",
+      "total_kwh": 33.474,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-02",
+      "total_kwh": 57.698,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-03",
+      "total_kwh": 60.555,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-04",
+      "total_kwh": 52.861,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-05",
+      "total_kwh": 56.059,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-06",
+      "total_kwh": 59.669,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-07",
+      "total_kwh": 55.82,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-08",
+      "total_kwh": 52.898,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-09",
+      "total_kwh": 56.754,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-10",
+      "total_kwh": 60.302,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-11",
+      "total_kwh": 54.696,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-12",
+      "total_kwh": 53.551,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-13",
+      "total_kwh": 54.613,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-14",
+      "total_kwh": 51.957,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-15",
+      "total_kwh": 54.141,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-16",
+      "total_kwh": 54.65,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-17",
+      "total_kwh": 37.049,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-18",
+      "total_kwh": 35.703,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-19",
+      "total_kwh": 34.412,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-20",
+      "total_kwh": 37.092,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-21",
+      "total_kwh": 64.589,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-22",
+      "total_kwh": 69.216,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-23",
+      "total_kwh": 56.739,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-24",
+      "total_kwh": 64.891,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-25",
+      "total_kwh": 54.892,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-26",
+      "total_kwh": 51.851,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-27",
+      "total_kwh": 60.072,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-02-28",
+      "total_kwh": 74.415,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-01",
+      "total_kwh": 83.676,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-02",
+      "total_kwh": 69.522,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-03",
+      "total_kwh": 70.448,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-04",
+      "total_kwh": 75.444,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-05",
+      "total_kwh": 76.418,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-06",
+      "total_kwh": 59.35,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-07",
+      "total_kwh": 64.66,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-08",
+      "total_kwh": 57.614,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-09",
+      "total_kwh": 29.141,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-10",
+      "total_kwh": 65.928,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-11",
+      "total_kwh": 56.248,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-12",
+      "total_kwh": 57.728,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-13",
+      "total_kwh": 55.508,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-14",
+      "total_kwh": 58.143,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-15",
+      "total_kwh": 57.103,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-16",
+      "total_kwh": 53.538,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-17",
+      "total_kwh": 22.361,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-18",
+      "total_kwh": 18.46,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-19",
+      "total_kwh": 16.576,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-20",
+      "total_kwh": 17.735,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-21",
+      "total_kwh": 14.28,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-22",
+      "total_kwh": 17.934,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-23",
+      "total_kwh": 29.131,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-24",
+      "total_kwh": 19.46,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-25",
+      "total_kwh": 43.256,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-26",
+      "total_kwh": 58.063,
+      "reading_count": 143
+    },
+    {
+      "date": "2013-03-27",
+      "total_kwh": 49.17,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-28",
+      "total_kwh": 50.416,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-29",
+      "total_kwh": 50.061,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-30",
+      "total_kwh": 48.408,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-03-31",
+      "total_kwh": 48.76,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-01",
+      "total_kwh": 51.098,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-02",
+      "total_kwh": 57.034,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-03",
+      "total_kwh": 56.914,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-04",
+      "total_kwh": 59.261,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-05",
+      "total_kwh": 60.031,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-06",
+      "total_kwh": 59.206,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-07",
+      "total_kwh": 58.335,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-08",
+      "total_kwh": 58.169,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-09",
+      "total_kwh": 57.537,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-10",
+      "total_kwh": 57.193,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-11",
+      "total_kwh": 55.541,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-12",
+      "total_kwh": 29.141,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-13",
+      "total_kwh": 40.184,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-14",
+      "total_kwh": 26.214,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-15",
+      "total_kwh": 28.574,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-16",
+      "total_kwh": 25.871,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-17",
+      "total_kwh": 25.322,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-18",
+      "total_kwh": 26.407,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-19",
+      "total_kwh": 24.986,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-20",
+      "total_kwh": 32.731,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-21",
+      "total_kwh": 27.424,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-22",
+      "total_kwh": 21.928,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-23",
+      "total_kwh": 22.503,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-24",
+      "total_kwh": 23.034,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-25",
+      "total_kwh": 25.796,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-26",
+      "total_kwh": 25.228,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-27",
+      "total_kwh": 23.367,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-28",
+      "total_kwh": 24.19,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-29",
+      "total_kwh": 24.245,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-04-30",
+      "total_kwh": 22.388,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-01",
+      "total_kwh": 21.67,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-02",
+      "total_kwh": 25.148,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-03",
+      "total_kwh": 24.582,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-04",
+      "total_kwh": 21.962,
+      "reading_count": 143
+    },
+    {
+      "date": "2013-05-05",
+      "total_kwh": 22.024,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-06",
+      "total_kwh": 20.202,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-07",
+      "total_kwh": 19.769,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-08",
+      "total_kwh": 20.146,
+      "reading_count": 143
+    },
+    {
+      "date": "2013-05-09",
+      "total_kwh": 21.404,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-10",
+      "total_kwh": 24.892,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-11",
+      "total_kwh": 23.463,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-12",
+      "total_kwh": 28.105,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-13",
+      "total_kwh": 23.384,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-14",
+      "total_kwh": 22.765,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-15",
+      "total_kwh": 21.505,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-16",
+      "total_kwh": 22.508,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-17",
+      "total_kwh": 22.228,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-18",
+      "total_kwh": 24.536,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-19",
+      "total_kwh": 22.682,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-20",
+      "total_kwh": 21.929,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-21",
+      "total_kwh": 25.065,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-22",
+      "total_kwh": 23.788,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-23",
+      "total_kwh": 22.87,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-24",
+      "total_kwh": 21.505,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-25",
+      "total_kwh": 22.839,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-26",
+      "total_kwh": 23.887,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-27",
+      "total_kwh": 31.921,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-28",
+      "total_kwh": 25.912,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-29",
+      "total_kwh": 24.807,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-30",
+      "total_kwh": 24.183,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-05-31",
+      "total_kwh": 24.871,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-01",
+      "total_kwh": 25.38,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-02",
+      "total_kwh": 26.264,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-03",
+      "total_kwh": 23.381,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-04",
+      "total_kwh": 23.16,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-05",
+      "total_kwh": 22.336,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-06",
+      "total_kwh": 23.207,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-07",
+      "total_kwh": 25.136,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-08",
+      "total_kwh": 22.073,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-09",
+      "total_kwh": 22.666,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-10",
+      "total_kwh": 20.702,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-11",
+      "total_kwh": 25.163,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-12",
+      "total_kwh": 21.873,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-13",
+      "total_kwh": 21.821,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-14",
+      "total_kwh": 20.947,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-15",
+      "total_kwh": 26.59,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-16",
+      "total_kwh": 29.799,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-17",
+      "total_kwh": 30.03,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-18",
+      "total_kwh": 24.302,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-19",
+      "total_kwh": 25.273,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-20",
+      "total_kwh": 21.398,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-21",
+      "total_kwh": 23.592,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-22",
+      "total_kwh": 22.807,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-23",
+      "total_kwh": 27.693,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-24",
+      "total_kwh": 21.311,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-25",
+      "total_kwh": 21.906,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-26",
+      "total_kwh": 22.032,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-27",
+      "total_kwh": 23.074,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-28",
+      "total_kwh": 23.714,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-29",
+      "total_kwh": 21.15,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-06-30",
+      "total_kwh": 21.606,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-01",
+      "total_kwh": 22.636,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-02",
+      "total_kwh": 21.737,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-03",
+      "total_kwh": 21.73,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-04",
+      "total_kwh": 21.729,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-05",
+      "total_kwh": 22.177,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-06",
+      "total_kwh": 21.987,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-07",
+      "total_kwh": 22.82,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-08",
+      "total_kwh": 22.946,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-09",
+      "total_kwh": 17.523,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-10",
+      "total_kwh": 17.678,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-11",
+      "total_kwh": 17.924,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-12",
+      "total_kwh": 17.692,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-13",
+      "total_kwh": 24.737,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-14",
+      "total_kwh": 27.331,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-15",
+      "total_kwh": 20.753,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-16",
+      "total_kwh": 24.311,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-17",
+      "total_kwh": 21.668,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-18",
+      "total_kwh": 24.483,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-19",
+      "total_kwh": 22.238,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-20",
+      "total_kwh": 22.418,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-21",
+      "total_kwh": 21.013,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-22",
+      "total_kwh": 22.522,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-23",
+      "total_kwh": 22.039,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-24",
+      "total_kwh": 22.138,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-25",
+      "total_kwh": 23.275,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-26",
+      "total_kwh": 24.123,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-27",
+      "total_kwh": 22.51,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-28",
+      "total_kwh": 20.026,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-29",
+      "total_kwh": 20.9,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-30",
+      "total_kwh": 21.704,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-07-31",
+      "total_kwh": 24.903,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-01",
+      "total_kwh": 23.724,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-02",
+      "total_kwh": 22.318,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-03",
+      "total_kwh": 19.398,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-04",
+      "total_kwh": 22.959,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-05",
+      "total_kwh": 22.38,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-06",
+      "total_kwh": 21.459,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-07",
+      "total_kwh": 20.334,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-08",
+      "total_kwh": 21.674,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-09",
+      "total_kwh": 22.833,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-10",
+      "total_kwh": 22.132,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-11",
+      "total_kwh": 23.4,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-12",
+      "total_kwh": 22.084,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-13",
+      "total_kwh": 19.941,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-14",
+      "total_kwh": 21.901,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-15",
+      "total_kwh": 23.827,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-16",
+      "total_kwh": 21.432,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-17",
+      "total_kwh": 21.758,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-18",
+      "total_kwh": 20.006,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-19",
+      "total_kwh": 22.234,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-20",
+      "total_kwh": 21.322,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-21",
+      "total_kwh": 21.579,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-22",
+      "total_kwh": 19.466,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-23",
+      "total_kwh": 21.498,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-24",
+      "total_kwh": 22.216,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-25",
+      "total_kwh": 20.13,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-26",
+      "total_kwh": 19.973,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-27",
+      "total_kwh": 23.946,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-28",
+      "total_kwh": 18.762,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-29",
+      "total_kwh": 22.148,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-30",
+      "total_kwh": 21.731,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-08-31",
+      "total_kwh": 21.404,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-01",
+      "total_kwh": 20.154,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-02",
+      "total_kwh": 25.806,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-03",
+      "total_kwh": 22.007,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-04",
+      "total_kwh": 20.768,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-05",
+      "total_kwh": 18.989,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-06",
+      "total_kwh": 18.544,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-07",
+      "total_kwh": 17.61,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-08",
+      "total_kwh": 16.527,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-09",
+      "total_kwh": 18.495,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-10",
+      "total_kwh": 18.062,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-11",
+      "total_kwh": 17.337,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-12",
+      "total_kwh": 23.83,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-13",
+      "total_kwh": 26.012,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-14",
+      "total_kwh": 27.437,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-15",
+      "total_kwh": 26.199,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-16",
+      "total_kwh": 27.245,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-17",
+      "total_kwh": 25.926,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-18",
+      "total_kwh": 29.377,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-19",
+      "total_kwh": 34.357,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-20",
+      "total_kwh": 33.322,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-21",
+      "total_kwh": 28.044,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-22",
+      "total_kwh": 25.648,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-23",
+      "total_kwh": 24.881,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-24",
+      "total_kwh": 24.836,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-25",
+      "total_kwh": 21.148,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-26",
+      "total_kwh": 25.191,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-27",
+      "total_kwh": 23.402,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-28",
+      "total_kwh": 25.366,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-29",
+      "total_kwh": 27.018,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-09-30",
+      "total_kwh": 32.979,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-01",
+      "total_kwh": 33.157,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-02",
+      "total_kwh": 21.233,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-03",
+      "total_kwh": 21.436,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-04",
+      "total_kwh": 20.899,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-05",
+      "total_kwh": 22.951,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-06",
+      "total_kwh": 23.753,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-07",
+      "total_kwh": 22.694,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-08",
+      "total_kwh": 23.549,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-09",
+      "total_kwh": 21.941,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-10",
+      "total_kwh": 22.021,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-11",
+      "total_kwh": 23.941,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-12",
+      "total_kwh": 18.883,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-13",
+      "total_kwh": 25.587,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-14",
+      "total_kwh": 24.567,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-15",
+      "total_kwh": 33.671,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-16",
+      "total_kwh": 35.249,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-17",
+      "total_kwh": 27.255,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-18",
+      "total_kwh": 30.491,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-19",
+      "total_kwh": 26.418,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-20",
+      "total_kwh": 31.034,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-21",
+      "total_kwh": 24.901,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-22",
+      "total_kwh": 23.108,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-23",
+      "total_kwh": 21.095,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-24",
+      "total_kwh": 20.772,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-25",
+      "total_kwh": 27.096,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-26",
+      "total_kwh": 26.021,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-27",
+      "total_kwh": 24.466,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-28",
+      "total_kwh": 28.967,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-29",
+      "total_kwh": 23.7,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-30",
+      "total_kwh": 22.587,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-10-31",
+      "total_kwh": 23.005,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-01",
+      "total_kwh": 24.489,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-02",
+      "total_kwh": 26.36,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-03",
+      "total_kwh": 28.495,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-04",
+      "total_kwh": 23.618,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-05",
+      "total_kwh": 34.075,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-06",
+      "total_kwh": 25.185,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-07",
+      "total_kwh": 26.243,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-08",
+      "total_kwh": 40.369,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-09",
+      "total_kwh": 26.81,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-10",
+      "total_kwh": 40.577,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-11",
+      "total_kwh": 42.533,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-12",
+      "total_kwh": 31.34,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-13",
+      "total_kwh": 26.176,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-14",
+      "total_kwh": 25.29,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-15",
+      "total_kwh": 28.413,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-16",
+      "total_kwh": 24.871,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-17",
+      "total_kwh": 21.704,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-18",
+      "total_kwh": 44.379,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-19",
+      "total_kwh": 44.034,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-20",
+      "total_kwh": 51.607,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-21",
+      "total_kwh": 44.453,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-22",
+      "total_kwh": 44.831,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-23",
+      "total_kwh": 43.165,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-24",
+      "total_kwh": 46.588,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-25",
+      "total_kwh": 42.392,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-26",
+      "total_kwh": 42.803,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-27",
+      "total_kwh": 23.832,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-28",
+      "total_kwh": 26.443,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-29",
+      "total_kwh": 25.423,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-11-30",
+      "total_kwh": 20.775,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-01",
+      "total_kwh": 26.461,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-02",
+      "total_kwh": 23.469,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-03",
+      "total_kwh": 28.458,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-04",
+      "total_kwh": 30.503,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-05",
+      "total_kwh": 23.813,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-06",
+      "total_kwh": 29.265,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-07",
+      "total_kwh": 26.036,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-08",
+      "total_kwh": 32.637,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-09",
+      "total_kwh": 26.707,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-10",
+      "total_kwh": 26.315,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-11",
+      "total_kwh": 25.963,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-12",
+      "total_kwh": 26.891,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-13",
+      "total_kwh": 25.777,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-14",
+      "total_kwh": 25.628,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-15",
+      "total_kwh": 44.609,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-16",
+      "total_kwh": 45.197,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-17",
+      "total_kwh": 31.588,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-18",
+      "total_kwh": 29.445,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-19",
+      "total_kwh": 23.984,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-20",
+      "total_kwh": 46.479,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-21",
+      "total_kwh": 26.147,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-22",
+      "total_kwh": 25.411,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-23",
+      "total_kwh": 18.743,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-24",
+      "total_kwh": 40.666,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-25",
+      "total_kwh": 40.153,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-26",
+      "total_kwh": 37.852,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-27",
+      "total_kwh": 42.413,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-28",
+      "total_kwh": 26.14,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-29",
+      "total_kwh": 26.462,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-30",
+      "total_kwh": 27.633,
+      "reading_count": 144
+    },
+    {
+      "date": "2013-12-31",
+      "total_kwh": 25.674,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-01",
+      "total_kwh": 48.862,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-02",
+      "total_kwh": 45.903,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-03",
+      "total_kwh": 24.809,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-04",
+      "total_kwh": 29.591,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-05",
+      "total_kwh": 26.02,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-06",
+      "total_kwh": 26.678,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-07",
+      "total_kwh": 39.392,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-08",
+      "total_kwh": 25.478,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-09",
+      "total_kwh": 25.789,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-10",
+      "total_kwh": 27.051,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-11",
+      "total_kwh": 47.872,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-12",
+      "total_kwh": 50.985,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-13",
+      "total_kwh": 51.305,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-14",
+      "total_kwh": 49.744,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-15",
+      "total_kwh": 51.616,
+      "reading_count": 143
+    },
+    {
+      "date": "2014-01-16",
+      "total_kwh": 45.869,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-17",
+      "total_kwh": 47.684,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-18",
+      "total_kwh": 23.805,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-19",
+      "total_kwh": 24.912,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-20",
+      "total_kwh": 23.293,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-21",
+      "total_kwh": 46.857,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-22",
+      "total_kwh": 45.817,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-23",
+      "total_kwh": 24.249,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-24",
+      "total_kwh": 25.848,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-25",
+      "total_kwh": 27.637,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-26",
+      "total_kwh": 35.078,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-27",
+      "total_kwh": 54.122,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-28",
+      "total_kwh": 44.36,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-29",
+      "total_kwh": 54.596,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-30",
+      "total_kwh": 45.696,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-01-31",
+      "total_kwh": 54.048,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-01",
+      "total_kwh": 43.29,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-02",
+      "total_kwh": 57.437,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-03",
+      "total_kwh": 48.627,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-04",
+      "total_kwh": 55.273,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-05",
+      "total_kwh": 48.562,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-06",
+      "total_kwh": 44.707,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-07",
+      "total_kwh": 50.395,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-08",
+      "total_kwh": 28.788,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-09",
+      "total_kwh": 23.025,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-10",
+      "total_kwh": 22.512,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-11",
+      "total_kwh": 26.391,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-12",
+      "total_kwh": 26.026,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-13",
+      "total_kwh": 43.302,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-14",
+      "total_kwh": 45.509,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-15",
+      "total_kwh": 45.672,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-16",
+      "total_kwh": 55.591,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-17",
+      "total_kwh": 43.828,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-18",
+      "total_kwh": 49.295,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-19",
+      "total_kwh": 27.408,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-20",
+      "total_kwh": 22.268,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-21",
+      "total_kwh": 23.929,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-22",
+      "total_kwh": 24.072,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-23",
+      "total_kwh": 27.592,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-24",
+      "total_kwh": 23.293,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-25",
+      "total_kwh": 23.263,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-26",
+      "total_kwh": 23.207,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-27",
+      "total_kwh": 33.617,
+      "reading_count": 144
+    },
+    {
+      "date": "2014-02-28",
+      "total_kwh": 1.538,
+      "reading_count": 3
     }
   ]
 }

@@ -138,7 +138,8 @@ def process_csv_file(file_obj, filename: str, run_id: str, mode: str):
             valid_records.clear()
             
         # In test mode, we bail early to save time
-        if mode == "test" and rows_read >= 1000:
+        limit = int(os.getenv("NUM_METER_READINGS", "100000"))
+        if mode == "test" and rows_read >= limit:
             break
             
     if valid_records:

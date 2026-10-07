@@ -1,8 +1,8 @@
 [
   {
+    "source_household_id": "MAC000002",
     "tariff_code": "Std",
     "service_point_id": "SP-000002",
-    "source_household_id": "MAC000002",
     "installation_date": "2010-02-01T00:00:00",
     "id": "METER-000002",
     "meter_type": "SMART_ELECTRICITY",
