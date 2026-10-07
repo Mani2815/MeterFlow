@@ -1,69 +1,100 @@
-# Utility Meter-to-Cash Cloud Data Platform
+# MeterFlow: Utility Meter-to-Cash Data Platform
 
-## The Problem
-Modern utility companies manage massive telemetry data (smart meter readings) alongside complex financial transactions (billing and payments). Legacy relational databases struggle under the dual load of operational writes and heavy analytical queries. 
+MeterFlow is an end-to-end data platform demonstrating the ingestion, processing, and visualization of utility smart meter telemetry alongside synthetic master data.
 
-This project simulates a highly scalable, idempotent Cloud Data Platform designed to ingest operational telemetry and billing data in near real-time, enforcing strict data quality and empowering dimensional analytics.
+## Architecture
 
-## Architecture & Data Flow
-1. **Source System**: A simulated PostgreSQL 15 operational database representing the utility CRM/Billing engine.
-2. **Ingestion (CDC & Batch)**: 
-   - **GCP Datastream (Phase 3)**: Agentless Change Data Capture (CDC) reads the Postgres Write-Ahead Log to capture real-time `INSERT/UPDATE/DELETE` events without impacting database performance.
-   - **Python Framework (Phase 2)**: Configuration-driven batch ingestion for external REST APIs and full table loads.
-3. **Processing Engine**: 
-   - **Apache Beam / Dataflow (Phase 4)**: Consumes Pub/Sub notifications of new CDC files, parses JSON, dynamically normalizes payloads, and dedups events.
-4. **Analytical Warehouse (Phase 5)**: 
-   - **BigQuery**: Data lands in a `Staging` layer, undergoes idempotent `MERGE` logic, and populates a Dimensional Star Schema (Core) partitioned for petabyte-scale querying.
-5. **Quality & Governance (Phase 6 & 7)**: 
-   - **Control Plane (Phase 8)**: A FastAPI service orchestrating backfills and schema evolution.
-   - **DLQ & Metrics**: Invalid records are safely quarantined in a Dead Letter Queue rather than silently dropped.
+This project is built as a complete, locally executable stack without external cloud dependencies:
 
-## Technology Stack
-- **Database**: PostgreSQL 15 (Docker)
-- **Languages**: Python 3.9, Standard SQL
-- **Frameworks**: FastAPI, Apache Beam, Pytest, Pydantic
-- **GCP Services**: Cloud Storage, Datastream, Pub/Sub, Dataflow, BigQuery, Cloud Run
-- **Orchestration**: Apache Airflow
+1. **Data Pipeline (Python/Pandas/PyArrow)**
+   - **Ingestion**: Fetches the UK Power Networks (UKPN) SmartMeter dataset and stores it as Raw JSON chunks.
+   - **Standardization**: Cleanses and normalizes the data into Standardized Parquet files.
+   - **Data Quality**: Validates records, separating valid rows into **Gold Parquet** while quarantining bad records into a Dead Letter Queue (DLQ).
 
-## Key Engineering Features
-- **Idempotency**: Running pipelines twice will never duplicate data thanks to deterministic `FARM_FINGERPRINT` surrogate keys and `QUALIFY ROW_NUMBER` deduplication windows.
-- **Schema Evolution**: Dynamically detects backward-compatible schema drifts (added nullable columns) while failing fast on breaking changes (type mutations).
-- **Historical Backfills**: Dedicated isolation tags (`_metadata_is_backfill`) ensure historical reloads never accidentally overwrite modern CDC updates.
-- **Reconciliation**: Automated SQL views ensure billed consumption mathematically matches raw meter telemetry.
+2. **Control Plane (PostgreSQL 15)**
+   - Stores synthetic master data (Customers, Accounts, Contracts, Meters, Service Points).
+   - Tracks pipeline execution metadata and data quality metrics.
 
-## Local Setup & Testing
-This repository utilizes a full local testing apparatus. No GCP credentials are required to validate the core Python/SQL logic.
+3. **Backend API (FastAPI)**
+   - Provides REST endpoints to expose pipeline metadata and synthetic master data to the frontend.
+
+4. **Frontend Dashboard (Next.js)**
+   - A modern web console (`/ui`) that visualizes data pipelines, schemas, and data quality metrics.
+   - Features two operational modes:
+     - **API Mode**: Connects live to the FastAPI backend and Postgres.
+     - **Demo Mode**: A static, frontend-only mode that reads generated JSON snapshots, suitable for Vercel deployment without a running backend.
+
+## Local Setup
+
+### 1. Prerequisites
+
+- Docker and Docker Compose
+- Node.js (>=20.9.0)
+- Python 3.9+
+
+### 2. Environment Setup
+
 ```bash
-# 1. Setup virtual environment
+# Create virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r scripts/requirements.txt
-pip install -r dataflow/requirements.txt
-pip install -r control_plane/requirements.txt
 
-# 2. Spin up the source operational database
-make db-up
-
-# 3. Generate 100,000+ records of synthetic Utility Data
-make seed
-
-# 4. Generate simulated real-time INSERT/UPDATE/DELETE CDC events
-make cdc
-
-# 5. Run the End-to-End Test Suites (Ingestion, Beam Pipeline, Governance, Quality)
-make test
+# Install backend dependencies
+pip install -r backend/requirements.txt
+# Alternatively, if dependencies are locally scattered:
+pip install fastapi uvicorn sqlalchemy asyncpg pandas pyarrow google-cloud-storage python-json-logger httpx
 ```
 
-## Documentation Directory
-- `docs/architecture.md`: Initial design specifications.
-- `docs/cdc-flow.md`: How Datastream and logical replication operate.
-- `docs/warehouse_design.md`: Star Schema design and partitioning strategy.
-- `docs/quality-framework.md`: Details on the validation and Dead Letter Queue.
-- `docs/phase7-backfill-schema.md`: How we safely orchestrate backfills.
-- `docs/observability-control.md`: Airflow and FastAPI Control Plane usage.
-- `docs/testing.md`: The 14-scenario End-to-End test plan.
-- `docs/interview-guide.md`: **Start Here** to understand the "Why" behind architectural decisions.
+Ensure you have a `.env` file at the root. You can copy `.env.example` if available.
 
-## GCP Setup & Cost Control
-Refer to `docs/datastream-setup.md` for terraform/gcloud commands to spin up the cloud infrastructure. 
-**Important:** To prevent runaway costs, ensure you drop the PostgreSQL logical replication slot when Datastream is paused, otherwise WAL logs will fill the disk. Use `make db-down -v` to destroy local volumes when finished.
+### 3. Start the Infrastructure
+
+```bash
+# Start PostgreSQL and FastAPI backend
+docker compose up -d
+```
+
+*Note: The frontend can also be run via Docker, or run locally for active development.*
+
+### 4. Run the Data Pipeline
+
+Process the UKPN SmartMeter dataset locally (target size configured via `NUM_METER_READINGS` in `.env`):
+
+```bash
+# 1. Ingestion
+PYTHONPATH=backend python backend/app/ingestion/smartmeter.py source smartmeter --mode test
+
+# 2. Standardization (Use the Ingestion Run ID output from the previous step)
+PYTHONPATH=backend python backend/app/processing/standardize.py run smartmeter --ingestion-run-id <YOUR_INGESTION_RUN_ID>
+
+# 3. Data Quality (Use the Standardize Run ID output from the previous step)
+PYTHONPATH=backend python backend/app/processing/quality.py run --standardize-run-id <YOUR_STANDARDIZE_RUN_ID>
+```
+
+### 5. Start the Frontend Dashboard
+
+```bash
+cd ui
+npm install
+
+# Run in live API mode
+NEXT_PUBLIC_DATA_MODE=api npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the MeterFlow console.
+
+## Generating Demo Data (Static Mode)
+
+To deploy the frontend statically (without the Python/Postgres backend), generate static JSON snapshots from your processed Gold Parquet files and Postgres master tables:
+
+```bash
+# Ensure backend and postgres are running
+PYTHONPATH=backend python scripts/generate_demo_data.py
+```
+
+This will write JSON snapshots into `ui/public/data/`. You can then run the frontend in demo mode:
+
+```bash
+cd ui
+NEXT_PUBLIC_DATA_MODE=demo npm run dev
+```
