@@ -20,11 +20,13 @@ logHandler.setFormatter(formatter)
 logger.addHandler(logHandler)
 logger.setLevel(logging.INFO)
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://meter:meterpass@db:5432/meter_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://meter_user:meter_pass@localhost:5432/meter_to_cash")
+if DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://")
 engine = create_async_engine(DATABASE_URL)
 AsyncSessionLocal = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
-LOCAL_GCS_MOCK_DIR = os.getenv("STORAGE_DIR", "/tmp/mock_gcs")
+LOCAL_GCS_MOCK_DIR = "/tmp/mock_gcs"
 
 async def record_dlq_event(db: AsyncSession, row: pd.Series, error_type: str, error_message: str):
     from app.models.core import DLQEvent

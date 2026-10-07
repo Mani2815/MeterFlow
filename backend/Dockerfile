@@ -7,5 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Run with gunicorn in production mode
-CMD ["sh", "-c", "gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:${PORT:-8000}"]
+# Run with uvicorn in production mode by default
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]

@@ -17,9 +17,7 @@ PROJECT_ID = os.getenv("GCP_PROJECT", "meter-to-cash-project")
 DATASET_ID = "utility_analytics"
 TABLE_ID = "fact_meter_reading"
 TABLE_PATH = f"{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}"
-STORAGE_DIR = os.getenv("STORAGE_DIR", "/tmp/mock_gcs")
-GOLD_DIR = f"{STORAGE_DIR}/utility/gold/smartmeter/"
-
+GOLD_DIR = "/tmp/mock_gcs/utility/gold/smartmeter/"
 
 def get_bq_client():
     try:
@@ -96,8 +94,7 @@ async def get_pipeline_summary(db: AsyncSession = Depends(get_db)):
     # Quality / Gold — derive from Gold Parquet since DataQualityRun doesn't store row counts
     import glob as _glob
     import os as _os
-    storage_dir = _os.getenv("STORAGE_DIR", "/tmp/mock_gcs")
-    gold_files = _glob.glob(f"{storage_dir}/utility/gold/smartmeter/*.parquet")
+    gold_files = _glob.glob("/tmp/mock_gcs/utility/gold/smartmeter/*.parquet")
     gold_rows = 0
     if gold_files:
         import pandas as _pd
@@ -158,10 +155,10 @@ async def get_pipeline_summary(db: AsyncSession = Depends(get_db)):
                 "fields": ["meter_id", "household_id", "event_timestamp", "consumption_kwh", "stdor_to_u", "standardize_run_id"],
             },
             {
-                "name": "BigQuery",
-                "status": "BLOCKED",
-                "description": "GCP Application Default Credentials not configured in container. Schema is ready.",
-                "rows": None,
+                "name": "Local Parquet",
+                "status": "PASS" if gold_rows > 0 else "PENDING",
+                "description": "Served directly from local Parquet without BigQuery.",
+                "rows": gold_rows,
             }
         ]
     }
@@ -169,93 +166,60 @@ async def get_pipeline_summary(db: AsyncSession = Depends(get_db)):
 @router.get("/summary")
 def get_analytics_summary():
     """Dataset overview (unique households, reading count, date range)"""
-    client = get_bq_client()
-    query = f"""
-        SELECT 
-            COUNT(DISTINCT source_household_id) as unique_households,
-            COUNT(*) as reading_count,
-            MIN(reading_timestamp) as min_date,
-            MAX(reading_timestamp) as max_date,
-            SUM(consumption_kwh) as total_consumption
-        FROM `{TABLE_PATH}`
-    """
-    try:
-        query_job = client.query(query)
-        result = list(query_job.result())
-        if not result:
-            return {"unique_households": 0, "reading_count": 0, "total_consumption": 0}
-        row = result[0]
-        return {
-            "unique_households": row.unique_households,
-            "reading_count": row.reading_count,
-            "min_date": row.min_date,
-            "max_date": row.max_date,
-            "total_consumption": row.total_consumption
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    df = get_latest_gold_df()
+    if df.empty:
+        return {"unique_households": 0, "reading_count": 0, "total_consumption": 0}
+        
+    return {
+        "unique_households": int(df['household_id'].nunique()) if 'household_id' in df.columns else 0,
+        "reading_count": len(df),
+        "min_date": str(df['event_timestamp'].min()) if 'event_timestamp' in df.columns else None,
+        "max_date": str(df['event_timestamp'].max()) if 'event_timestamp' in df.columns else None,
+        "total_consumption": float(round(df['consumption_kwh'].sum(), 2)) if 'consumption_kwh' in df.columns else 0
+    }
 
 @router.get("/consumption/daily")
 def get_daily_consumption():
     """Daily consumption for time-series charts"""
-    client = get_bq_client()
-    query = f"""
-        SELECT 
-            DATE(reading_timestamp) as day,
-            SUM(consumption_kwh) as total_consumption
-        FROM `{TABLE_PATH}`
-        GROUP BY 1
-        ORDER BY 1 DESC
-        LIMIT 30
-    """
-    try:
-        query_job = client.query(query)
-        results = [{"day": str(r.day), "consumption": r.total_consumption} for r in query_job.result()]
-        return results
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    df = get_latest_gold_df()
+    if df.empty or 'event_timestamp' not in df.columns or 'consumption_kwh' not in df.columns:
+        return []
+        
+    df['day'] = pd.to_datetime(df['event_timestamp']).dt.date
+    daily = df.groupby('day')['consumption_kwh'].sum().reset_index()
+    daily = daily.sort_values('day', ascending=False).head(30)
+    
+    return [{"day": str(row['day']), "consumption": float(row['consumption_kwh'])} for _, row in daily.iterrows()]
 
 @router.get("/households")
 def get_household_analytics():
-    client = get_bq_client()
-    query = f"""
-        SELECT 
-            source_household_id,
-            SUM(consumption_kwh) as total_consumption,
-            COUNT(*) as reading_count
-        FROM `{TABLE_PATH}`
-        GROUP BY 1
-        ORDER BY total_consumption DESC
-        LIMIT 10
-    """
-    try:
-        query_job = client.query(query)
-        results = [dict(r) for r in query_job.result()]
-        return results
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    df = get_latest_gold_df()
+    if df.empty or 'household_id' not in df.columns or 'consumption_kwh' not in df.columns:
+        return []
+        
+    hh = df.groupby('household_id').agg(
+        total_consumption=('consumption_kwh', 'sum'),
+        reading_count=('consumption_kwh', 'count')
+    ).reset_index()
+    hh = hh.sort_values('total_consumption', ascending=False).head(10)
+    
+    return [{"source_household_id": row['household_id'], "total_consumption": float(row['total_consumption']), "reading_count": int(row['reading_count'])} for _, row in hh.iterrows()]
 
 @router.get("/tariffs")
 def get_tariff_analytics():
-    """Tariff breakdown and statistics from BigQuery."""
-    client = get_bq_client()
-    query = f"""
-        SELECT 
-            stdor_to_u as tariff_code,
-            COUNT(DISTINCT source_household_id) as household_count,
-            COUNT(*) as total_readings,
-            SUM(consumption_kwh) as total_consumption_kwh
-        FROM `{TABLE_PATH}`
-        WHERE stdor_to_u IS NOT NULL
-        GROUP BY 1
-        ORDER BY household_count DESC
-    """
-    try:
-        query_job = client.query(query)
-        results = [dict(r) for r in query_job.result()]
-        return results
-    except Exception as e:
-        raise HTTPException(status_code=503, detail=str(e))
+    """Tariff breakdown and statistics."""
+    df = get_latest_gold_df()
+    if df.empty or 'stdor_to_u' not in df.columns or 'household_id' not in df.columns or 'consumption_kwh' not in df.columns:
+        return []
+        
+    tariffs = df.groupby('stdor_to_u').agg(
+        household_count=('household_id', 'nunique'),
+        total_readings=('consumption_kwh', 'count'),
+        total_consumption_kwh=('consumption_kwh', 'sum')
+    ).reset_index()
+    tariffs = tariffs.sort_values('household_count', ascending=False)
+    
+    return [{"tariff_code": row['stdor_to_u'], "household_count": int(row['household_count']), "total_readings": int(row['total_readings']), "total_consumption_kwh": float(row['total_consumption_kwh'])} for _, row in tariffs.iterrows()]
 
 @router.get("/data-quality")
 async def get_data_quality_stats(db: AsyncSession = Depends(get_db)):

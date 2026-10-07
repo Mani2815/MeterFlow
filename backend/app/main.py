@@ -21,10 +21,9 @@ logger.addHandler(logHandler)
 app = FastAPI(title="Utility Meter-to-Cash Data Platform API")
 
 # Setup CORS for the Next.js frontend
-allowed_origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
+    allow_origins=["*"], # In production, restrict this to the real frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -53,20 +52,10 @@ app.include_router(master_data.router, prefix="/api/v1")
 def health_check():
     return {"status": "healthy", "timestamp": datetime.now(timezone.utc).isoformat()}
 
-from fastapi import Depends, HTTPException
+from fastapi import Depends
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, func, text
+from sqlalchemy import select, func
 from app.database import get_db
-
-@app.get("/api/v1/ready", tags=["System"])
-async def ready_check(db: AsyncSession = Depends(get_db)):
-    try:
-        await db.execute(text("SELECT 1"))
-        return {"status": "ready", "database": "connected"}
-    except Exception as e:
-        logger.error(f"Readiness check failed: {str(e)}")
-        raise HTTPException(status_code=503, detail="Service Unavailable: Database not ready")
-
 from app.models.core import IngestionRun, DLQEvent, DataQualityRun
 
 @app.get("/api/v1/dashboard/summary", tags=["Dashboard"])
@@ -93,12 +82,12 @@ async def get_dashboard_summary(db: AsyncSession = Depends(get_db)):
     # Real quality score
     quality_score_result = await db.execute(select(func.avg(DataQualityRun.overall_score)))
     quality_score = quality_score_result.scalar()
-    quality_score = round(quality_score, 1) if quality_score is not None else 100.0
+    quality_score = round(quality_score, 1) if quality_score is not None else 0.0
 
     return {
         "records_processed_today": total_records,
         "quality_score": quality_score,
         "failed_runs": total_failed,
         "dlq_count": total_dlq,
-        "active_sources": total_active_sources if total_active_sources > 0 else 1
+        "active_sources": total_active_sources
     }

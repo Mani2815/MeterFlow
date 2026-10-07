@@ -33,12 +33,14 @@ PARTITIONED_ZIP_URL = "https://data.london.gov.uk/download/vqm0d/04feba67-f1a3-4
 TARIFFS_URL = "https://data.london.gov.uk/download/vqm0d/14855047-44c2-4856-8a48-e5649200e6ce/Tariffs.xlsx"
 
 # Database Configuration (fallback to defaults if not in env)
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://meter:meterpass@db:5432/meter_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://meter_user:meter_pass@localhost:5432/meter_to_cash")
+if DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://")
 engine = create_async_engine(DATABASE_URL)
 AsyncSessionLocal = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
 # For testing locally without GCP credentials
-LOCAL_GCS_MOCK_DIR = os.getenv("STORAGE_DIR", "/tmp/mock_gcs")
+LOCAL_GCS_MOCK_DIR = "/tmp/mock_gcs"
 
 def get_db():
     return AsyncSessionLocal()
@@ -49,7 +51,7 @@ def download_file(url: str, dest_path: str):
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            with httpx.stream("GET", url, timeout=60.0) as response:
+            with httpx.stream("GET", url, timeout=60.0, verify=False) as response:
                 response.raise_for_status()
                 with open(dest_path, "wb") as f:
                     for chunk in response.iter_bytes(chunk_size=8192):
@@ -86,7 +88,7 @@ def validate_row(row: Dict[str, str]) -> Optional[Dict[str, Any]]:
             # Fallback if different format
             event_timestamp = datetime.now() # Mock for unparseable in this demo
             
-        consumption_str = row.get("KWH/hh (per half hour)", "0")
+        consumption_str = row.get("KWH/hh (per half hour) ", row.get("KWH/hh (per half hour)", "0"))
         if consumption_str.strip() == "Null":
             consumption = 0.0
         else:

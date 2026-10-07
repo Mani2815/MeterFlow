@@ -11,14 +11,15 @@ from sqlalchemy.orm import sessionmaker
 from app.models.master_data import SyntheticCustomer, SyntheticAccount, SyntheticServicePoint, SyntheticContract, SyntheticMeter
 
 # Database connection
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://meter:meterpass@db:5432/meter_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://meter_user:meter_pass@localhost:5432/meter_to_cash")
+if DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
 engine = create_async_engine(DATABASE_URL)
 AsyncSessionLocal = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
 def get_unique_households():
     """Extract distinct real UKPN households and their tariffs from Gold dataset."""
-    storage_dir = os.getenv("STORAGE_DIR", "/tmp/mock_gcs")
-    gold_dir = f"{storage_dir}/utility/gold/smartmeter/"
+    gold_dir = "/tmp/mock_gcs/utility/gold/smartmeter/"
     files = glob.glob(os.path.join(gold_dir, "*.parquet"))
     if not files:
         print("No Gold Parquet files found. Run the ingestion pipeline first.")
@@ -112,8 +113,7 @@ async def generate_master_data(seed: int):
     df_meters = pd.DataFrame(meters)
     
     # Save to Synthetic Data Lake
-    storage_dir = os.getenv("STORAGE_DIR", "/tmp/mock_gcs")
-    base_dir = f"{storage_dir}/synthetic"
+    base_dir = "/tmp/mock_gcs/synthetic"
     
     for name, df in [
         ("customer", df_customers),

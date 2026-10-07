@@ -21,11 +21,13 @@ logHandler.setFormatter(formatter)
 logger.addHandler(logHandler)
 logger.setLevel(logging.INFO)
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://meter:meterpass@db:5432/meter_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://meter_user:meter_pass@localhost:5432/meter_to_cash")
+if DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://")
 engine = create_async_engine(DATABASE_URL)
 AsyncSessionLocal = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
-LOCAL_GCS_MOCK_DIR = os.getenv("STORAGE_DIR", "/tmp/mock_gcs")
+LOCAL_GCS_MOCK_DIR = "/tmp/mock_gcs"
 
 async def record_run(db: AsyncSession, run_id: str, ingestion_run_id: str, dataset: str, source_file: str, status: str, rows_processed: int, bytes_processed: int, output_file: str = None, error_message: str = None):
     from app.models.core import StandardizeRun

@@ -34,12 +34,10 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/app
-      - ./data:/app/data
+      - /tmp/mock_gcs:/tmp/mock_gcs
     environment:
       - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
       - APP_ENV=development
-      - STORAGE_DIR=/app/data
-      - ALLOWED_ORIGINS=http://localhost:3000
     depends_on:
       postgres:
         condition: service_healthy

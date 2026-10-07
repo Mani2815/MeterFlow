@@ -12,7 +12,7 @@ logHandler.setFormatter(formatter)
 logger.addHandler(logHandler)
 logger.setLevel(logging.INFO)
 
-LOCAL_GCS_MOCK_DIR = os.getenv("STORAGE_DIR", "/tmp/mock_gcs")
+LOCAL_GCS_MOCK_DIR = "/tmp/mock_gcs"
 PROJECT_ID = os.getenv("GCP_PROJECT", "meter-to-cash-project")
 DATASET_ID = "utility_analytics"
 TABLE_ID = "fact_meter_reading"
